@@ -13,15 +13,18 @@ var EmbedderJS = {
     }
   },
   
-  embedHTMLByClass: function(elClass, html, hasHTMLTag, w, h){
+  embedHTMLByClass: function(elClass, html, w, h){
      var datauri = "data:text/html;charset=UTF-8,"+encodeURI(html);
      var el = document.createElement("iframe");
      el.setAttribute("src",datauri);
      el.setAttribute("width",w);
      el.setAttribute("height",h);
-     const parentObject = document.getElementsByClassName(elClass);
-    [...parentObject].forEach((parent, i) => {
-      parent.appendChild(el)
-    });
+     for(var i = 0; i <= document.getElementsByClassName("one").length; i++){
+        var el = document.createElement("iframe);
+        el.setAttribute("src",datauri);
+        el.setAttribute("width", w);
+        el.setAttribute("height", h);
+        document.getElementsByClassName(elClass) [i].appendChild(el);
+    };
   }
 }
