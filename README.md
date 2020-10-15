@@ -30,10 +30,31 @@ height (optional) | string or integer | height of embed (only if contains `html`
 
 If the `contains html tags` input is set to true, it will generate a `data:` URI and embedd it using iframe.
 
+## Using it with the class attribute
+
+### Syntax
+Just add:
+
+```HTML 
+<script>
+EmbedderJS.embedHTML("my-class","<html></html>", 500, 500);
+</script>
+``` 
+
+and you, of course, replace my-class with your class and `<html></html>` with the full html. Replace the number 500 with the correct width and height in the order: width, height.
+
+### Inputs
+
+Input | Type | What it does
+------|------|------
+class | string |the class of the element(s) you want to embed the HTML in.
+html | string | The HTML to embed
+width | string or integer | width of embed
+height | string or integer | height of embed
+
 ## Features planned to come in the next release
 
 * Add the style of the iframe
-* Add it to multiple elements using classes
 
 ## How can I contribute?
 
