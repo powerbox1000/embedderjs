@@ -37,4 +37,6 @@ If the `contains html tags` input is set to true, it will generate a `data:` URI
 
 Just put ideas and bugs in the "Issues" section!
 
-copyright&copy;2020 DevTime Scripting, Inc.
+###### Copyrights
+
+<b>copyright&copy;2020 DevTime Scripting, Inc.</b>
