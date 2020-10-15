@@ -10,11 +10,11 @@ Then, insert a `<div id="my-id"></div>` where you want the embedd, replacing "my
 Finally, insert this script before the `</body>` tag:<br>
 ```HTML 
 <script>
-EmbedderJS.embedHTML("my-id","<html></html>",true);
+EmbedderJS.embedHTML("my-id","<html></html>",true, 500, 500);
 </script>
 ``` 
 
-and you, of course, replace my-id with your id and `<html></html>` with the full html.
+and you, of course, replace my-id with your id and `<html></html>` with the full html. Replace the number 500 with the correct width and height in the order: width, height.
 
 ## What are the inputs?
 
