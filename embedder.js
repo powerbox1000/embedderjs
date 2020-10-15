@@ -11,7 +11,7 @@ var EmbedderJS = {
     else{
       document.getElementById(id).innerHTML = html;
     }
-  }
+  },
   
   embedHTMLByClass: function(class, html, hasHTMLTag, w, h){
      var datauri = "data:text/html;charset=UTF-8,"+encodeURI(html);
