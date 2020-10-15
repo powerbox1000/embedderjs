@@ -13,12 +13,15 @@ var EmbedderJS = {
     }
   },
   
-  embedHTMLByClass: function(class, html, hasHTMLTag, w, h){
+  embedHTMLByClass: function(elClass, html, hasHTMLTag, w, h){
      var datauri = "data:text/html;charset=UTF-8,"+encodeURI(html);
      var el = document.createElement("iframe");
      el.setAttribute("src",datauri);
      el.setAttribute("width",w);
      el.setAttribute("height",h);
-     document.getElementByClassName(class).appendChild(el);
+     const parentObject = document.getElementsByClassName(elClass);
+    [...parentObject].forEach((parent, i) => {
+      parent.appendChild(el)
+    });
   }
 }
