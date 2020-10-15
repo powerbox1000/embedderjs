@@ -1,8 +1,12 @@
 var EmbedderJS = {
-  embedHTML: function(id, html, hasHTMLTag, w = null, h = null){
+  embedHTML: function(id, html, hasHTMLTag, w, h){
     if(hasHTMLTag){
       var datauri = "data:text/html;charset=UTF-8,"+encodeURI(html);
-      document.getElementById(id).innerHTML '<iframe src="'+ datauri +'" width="'+ w +'" height="'+ h +'"></iframe>';
+      var el = document.createElement("iframe");
+      el.setAttribute("src",datauri);
+      el.setAttribute("width",w);
+      el.setAttribute("height",h);
+            document.getElementById(id).appendChild(el);
     }
     else{
       document.getElementById(id).innerHTML = html;
