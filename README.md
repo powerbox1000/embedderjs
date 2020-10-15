@@ -20,7 +20,7 @@ and you, of course, replace my-id with your id and `<html></html>` with the full
 
 Input | Type | What it does
 ------|------|------
-id | string |the id of the element yu want to embed the HTML in.
+id | string |the id of the element you want to embed the HTML in.
 html | string | The HTML to embed
 contains `<html>` tags? | boolean | Set to true if your HTML has `<html>` tags
 width (optional) | string or integer | width of embed (only if contains `html` tag is true)
